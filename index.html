@@ -1,41 +1,36 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de Temperatura</title>
-    <link rel="stylesheet" href="./styles.css/estilo.css">
-    <link rel="stylesheet" href="./styles.css/reset.css">
+    <link href="./styles/style.css" rel="stylesheet">
+    <title>Conversor</title>
 </head>
-<body >
-
-    <header>
-        <div > <h1>Conversor de Temperatura Celsius para Fahrenheit</h1> </div>
-       
-
-    </header> <br>
+<body>
+    <header class="neon-border">
+        <h2>Conversor</h2>
     <section>
         <h1 style="text-align: center;">Digite uma temperatura</h1>
-        <div id='msg'>
-        </div>
-       
-        <div data-botao>
-            <input type="number" id="bota" data-celsiu placeholder="Graus Celsius" > 
-            <button  style="height: 30px; border-radius: 15px;cursor: pointer;" data-botao>Converter para Fahrenheit</button>
+        
+        <div id="msg"></div>
+
+    
+        <div>
+            <input type="number" id="celsius" placeholder="Graus Celsius"> 
+            <button style="height: 30px; border-radius: 15px; cursor: pointer;" onclick="converterParaFahrenheit()">Converter para Fahrenheit</button>
         </div>
         
-        <h3 data-3 style="text-align: center;"></h3>
-        <div id="foto">
-            <img id="imagem"  >
+        <br>
+
+        
+        <div>
+            <input type="number" id="fahrenheit" placeholder="Graus Fahrenheit"> 
+            <button style="height: 30px; border-radius: 15px; cursor: pointer;" onclick="converterParaCelsius()">Converter para Celsius</button>
         </div>
 
-
+        <h3 id="resultado" ></h3>
     </section>
-    
-    <script src="javaa.js"></script>
-
-    
+</header>
+    <script src="./script/javaa.js"></script>
 </body>
 </html>
