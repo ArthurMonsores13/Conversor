@@ -42,7 +42,7 @@ header h2 {
 header p {
     margin-bottom: 20px;
     font-size: 1.2em;
-    padding-left: 232px;
+    padding-left: 0; /* Removido o padding-left excessivo */
 }
 
 /* Estilização dos inputs e botões */
@@ -61,7 +61,7 @@ input[type="number"] {
 
 input[type="number"]:focus {
     outline: none;
-    border-color:#ff4500;
+    border-color: #ff4500;
 }
 
 button {
@@ -90,9 +90,16 @@ button:hover {
 
     header p {
         font-size: 1em;
+        padding-left: 0; /* Garantir que não haja padding à esquerda em telas menores */
+    }
+
+    input[type="number"], button {
+        width: 100%;
+        max-width: none;
+        padding: 15px; /* Ajustar o padding em telas menores */
     }
 }
-#resultado{
+
+#resultado {
     padding: 50px;
 }
-
