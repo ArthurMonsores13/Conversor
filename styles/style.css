@@ -42,10 +42,10 @@ header h2 {
 header p {
     margin-bottom: 20px;
     font-size: 1.2em;
-    padding-left: 0; /* Removido o padding-left excessivo */
+    padding-left: 0; 
 }
 
-/* Estilização dos inputs e botões */
+
 input[type="number"] {
     padding: 15px;
     margin-bottom: 20px;
@@ -63,19 +63,24 @@ input[type="number"]:focus {
     outline: none;
     border-color: #ff4500;
 }
-
 button {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
     background-color: #ff4500;
     color: white;
-    padding: 29px;
-    border: none;
+    padding: 15px;
+    border: ;
     border-radius: 5px;
     cursor: pointer;
     font-size: 19px;
     transition: background-color 0.3s, transform 0.3s;
     width: 100%;
     max-width: 300px;
+    margin-left: 70px;
 }
+
+
 
 button:hover {
     background-color: #e63900;
