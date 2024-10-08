@@ -19,6 +19,7 @@ function converterParaCelsius() {
     let celsius = (fahrenheit - 32) * 5/9;
     document.getElementById('resultado').innerHTML = `${fahrenheit}°F é igual a ${celsius.toFixed(2)}°C`;
 
+    // Passa a temperatura em Fahrenheit para a função de mudança de cor
     alterarCorDeFundo(fahrenheit);  
 }
 
@@ -30,4 +31,10 @@ function alterarCorDeFundo(temperatura) {
     } else {
         document.body.style.background = 'rgb(233, 163, 58)';  // Cor quente
     }
+}
+function resetarCampos() {
+    document.getElementById('celsius').value = '';
+    document.getElementById('fahrenheit').value = '';
+    document.getElementById('resultado').innerHTML = '';
+    document.body.style.background = ''; 
 }
